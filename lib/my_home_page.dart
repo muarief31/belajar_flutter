@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
                             ),
                           );
                         },
-                        child: const Text("Ke Halaman Second Page")),
+                        child: const Text("Move to Second Page")),
                   ],
                 ),
               ),
