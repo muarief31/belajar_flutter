@@ -12,6 +12,7 @@ class SecondPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 20),
             Container(
               color: Colors.green,
               child: Image.network(
@@ -20,8 +21,9 @@ class SecondPage extends StatelessWidget {
                 width: 90,
               ),
             ),
+            const SizedBox(height: 20),
             Container(
-              color: Colors.green,
+              color: Color.fromARGB(255, 19, 187, 156),
               child: Image.asset(
                 "assets/cheetah_lg.png",
                 height: 90,
@@ -29,8 +31,10 @@ class SecondPage extends StatelessWidget {
               ),
             ),
             TextButton(
-              onPressed: () {},
-              child: const Text("Kembali ke halaman sebelumnya"),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Back to Home Page"),
             )
           ],
         ),
