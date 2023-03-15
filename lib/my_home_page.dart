@@ -9,10 +9,10 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 2, 9, 32),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 50, 50, 50),
-        title: const Text("Learn Flutter"),
+        backgroundColor: Colors.purple,
+        title: const Text("Azri Project :)"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -21,33 +21,29 @@ class MyHomePage extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height,
               width: double.infinity,
-              color: Color.fromARGB(232, 239, 228, 79),
-              // ignore: prefer_const_constructors
+              color: Colors.black,
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
-                    const Text(
-                      "All About Error",
+                    Text(
+                      "Halo gess",
                       style: TextStyle(
                         fontSize: 20,
-                        color: Colors.red,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white,
                       ),
                     ),
                     ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            //Buat pindah page
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return const SecondPage();
-                              },
-                            ),
-                          );
-                        },
-                        child: const Text("Move to Second Page")),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) {
+                            return SecondPage();
+                          },
+                        ));
+                      },
+                      child: Text("Ke Halaman Second Page"),
+                    ),
                   ],
                 ),
               ),
@@ -55,14 +51,14 @@ class MyHomePage extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height,
               width: double.infinity,
-              color: Color.fromARGB(232, 76, 170, 162),
-              // ignore: prefer_const_constructors
-              child: Center(
-                child: const Text(
-                  "All About Error",
+              color: Color.fromARGB(255, 28, 5, 80),
+              child: const Center(
+                child: Text(
+                  "This Azri project ",
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.red,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white,
                   ),
                 ),
               ),

@@ -9,43 +9,30 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.only(top: 30, bottom: 24, left: 24, right: 24),
       child: Row(
-        // ignore: prefer_const_literals_to_create_immutables
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        // ignore: prefer_const_literals_to_create_immutables
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                "Estate",
-                style: GoogleFonts.poppins(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                "Best discovery ever",
-                style: GoogleFonts.poppins(
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
+              Text("Estate",
+                  style: GoogleFonts.poppins(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  )),
+              Text("Best Discovery ever",
+                  style: GoogleFonts.poppins(
+                      fontSize: 14, fontWeight: FontWeight.normal)),
             ],
           ),
-          // ignore: prefer_const_constructors
           ClipRRect(
             borderRadius: BorderRadius.circular(100),
             child: Container(
-              color: const Color(0xffF7F6F9),
-              padding: const EdgeInsets.all(8),
-              // ignore: prefer_const_constructors
-              child: Icon(
-                Icons.notifications_outlined,
-                size: 24,
-              ),
-            ),
+                color: Color.fromARGB(255, 238, 238, 238),
+                padding: const EdgeInsets.all(8),
+                child:
+                    Container(child: const Icon(Icons.notifications_outlined))),
           )
         ],
       ),
